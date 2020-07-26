@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, imgUrl, id, icons } = project;
 
             return (
               <Row key={id}>
@@ -42,6 +42,7 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                      <div className="icons-wrapper">{icons}</div>
                       <div>
                         <p>
                           {info ||
@@ -68,6 +69,7 @@ const Projects = () => {
                           Source Code
                         </a>
                       )}
+                      <img style={{backgroundImage: 'url(../../images/icons//gatsby-ico.svg)', width: '50px'}}></img>
                     </div>
                   </Fade>
                 </Col>
@@ -81,7 +83,7 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url || '#!'}
+                        href={url}
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"
@@ -100,7 +102,7 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                          <img alt={title} src={imgUrl}></img>
                           </div>
                         </Tilt>
                       </a>
