@@ -3,6 +3,7 @@
   color: $white-color;
   margin-top: -15rem;
   padding-top: 15rem;
+  
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -77,6 +78,7 @@
   }
   & img {
     border-radius: 5px;
+    max-width: 100%;
   }
   & svg {
     height: 100%;

@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
+import React from 'react';
 import GatsbyLogo from '../components/Icons/GatsbyLogo';
-import React from "react"
 import ReactLogo from '../components/Icons/ReactLogo';
 import NodejsLogo from '../components/Icons/NodejsLogo';
 import MongodbLogo from '../components/Icons/MongodbLogo';
@@ -36,29 +36,31 @@ export const projectsData = [
     id: nanoid(),
     imgUrl: 'https://media.giphy.com/media/U1rSU2WqtpLF4OV61A/giphy.gif',
     title: 'Rocky Mountain Publishing',
-    info: 'Over the spring of 2020 I built a brand new website for Rocky Mountain Publishing, a company I worked with for over 3 years as the Printer Operator and Graphic Designer.',
-    info2: 'This project came with some challenges, such as creating a web-scraper using Node.js to crawl the entire (old) website, formulating a database containing all the art RMP sells.',
+    info:
+      'Over the spring of 2020 I built a brand new website for Rocky Mountain Publishing, a company I worked with for over 3 years as the Printer Operator and Graphic Designer.',
+    info2:
+      'This project came with some challenges, such as creating a web-scraper using Node.js to crawl the entire (old) website, formulating a database containing all the art RMP sells.',
     url: 'https://www.rockymountainpublishing.net/',
     repo: 'https://github.com/jeremyash13/rmp-ver2', // if no repo, the button will not show up
-    icons: [<GatsbyLogo/>, <ReactLogo/>, <NodejsLogo/>, <TailwindLogo/>, <MongodbLogo/>, ],
+    icons: [<GatsbyLogo />, <ReactLogo />, <NodejsLogo />, <TailwindLogo />, <MongodbLogo />],
   },
   {
     id: nanoid(),
-    imgUrl: 'project.jpg',
+    imgUrl: 'https://media.giphy.com/media/eLeQoYNcGeb5SwylL7/giphy.gif',
     title: 'React Calculator',
-    info: '',
+    info: 'A simple calculator built with React.js',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://ja95-react-calculator.netlify.com',
+    repo: 'https://github.com/jeremyash13/react-calculator', // if no repo, the button will not show up
+    icons: [<ReactLogo />],
   },
-  
 ];
 
 // CONTACT DATA
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'jeremyash13@gmail.com',
 };
 
 // FOOTER DATA

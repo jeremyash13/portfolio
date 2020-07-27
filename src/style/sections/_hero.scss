@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $blackish;
+  background-color: transparent;
+  // background-color: $blackish;
   font-weight: 400;
   color: $white-color;
   padding: 0rem 5.6rem;
@@ -15,11 +16,20 @@
   right: 0;
   z-index: -1;
 
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
+  &::after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/mountain-cloudy.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: brightness(.3);
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.75);
+  }
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
