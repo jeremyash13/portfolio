@@ -5,6 +5,9 @@ import ReactLogo from '../components/Icons/ReactLogo';
 import NodejsLogo from '../components/Icons/NodejsLogo';
 import MongodbLogo from '../components/Icons/MongodbLogo';
 import TailwindLogo from '../components/Icons/TailwindLogo';
+import HtmlLogo from '../components/Icons/HtmlLogo';
+import CssLogo from '../components/Icons/CssLogo';
+import JavascriptLogo from '../components/Icons/JavascriptLogo';
 
 // HEAD DATA
 export const headData = {
@@ -52,7 +55,47 @@ export const projectsData = [
     info2: '',
     url: 'https://ja95-react-calculator.netlify.com',
     repo: 'https://github.com/jeremyash13/react-calculator', // if no repo, the button will not show up
-    icons: [<ReactLogo />],
+    icons: [<ReactLogo />, <HtmlLogo />, <CssLogo />],
+  },
+  {
+    id: nanoid(),
+    imgUrl: 'https://media.giphy.com/media/iihAadNGCoMkNhj3ZQ/giphy.gif',
+    title: 'Wheel of Success Game',
+    info: 'Inspired by the Wheel of Fortune game-show',
+    info2: '',
+    url: 'https://jeremyash13.github.io/Game-Show-App/',
+    repo: 'https://github.com/jeremyash13/Game-Show-App', // if no repo, the button will not show up
+    icons: [<HtmlLogo />, <CssLogo />, <JavascriptLogo />],
+  },
+  {
+    id: nanoid(),
+    imgUrl: 'https://media.giphy.com/media/SUc6jKDeUETaQNL95a/giphy.gif',
+    title: 'Web App Dashboard',
+    info: 'A mock web app dashboard',
+    info2: '',
+    url: 'https://jeremyash13.github.io/Web-App-Dashboard/',
+    repo: 'https://github.com/jeremyash13/Web-App-Dashboard', // if no repo, the button will not show up
+    icons: [<HtmlLogo />, <CssLogo />, <JavascriptLogo />],
+  },
+  {
+    id: nanoid(),
+    imgUrl: 'https://media.giphy.com/media/fsDjhCVwtMhs9qplWj/giphy.gif',
+    title: 'Interactive Video Player',
+    info: 'A video player that highlights text alongside a video',
+    info2: '',
+    url: 'https://jeremyash13.github.io/Interactive-Video-Player/',
+    repo: 'https://github.com/jeremyash13/Interactive-Video-Player', // if no repo, the button will not show up
+    icons: [<HtmlLogo />, <CssLogo />, <JavascriptLogo />],
+  },
+  {
+    id: nanoid(),
+    imgUrl: 'https://media.giphy.com/media/J13fIcYWUKdtjmSikh/giphy.gif',
+    title: 'Photo Gallery',
+    info: 'A simple photo gallery with search functionality',
+    info2: '',
+    url: 'https://jeremyash13.github.io/Photo-Gallery-Project/',
+    repo: 'https://github.com/jeremyash13/Photo-Gallery-Project', // if no repo, the button will not show up
+    icons: [<HtmlLogo />, <CssLogo />, <JavascriptLogo />],
   },
 ];
 
