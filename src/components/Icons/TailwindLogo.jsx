@@ -1,10 +1,20 @@
-import React from 'react';
-import { nanoid } from 'nanoid';
+import React, { useState } from 'react';
 
-export default function TailwindLogo() {
+import { nanoid } from 'nanoid';
+import { Popover, PopoverHeader, PopoverBody } from 'shards-react';
+
+export default function TailwindLogo({ id }) {
   const someKey = nanoid();
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="icon" key={someKey}>
+    <a
+      href="https://tailwindcss.com/"
+      className="icon"
+      key={someKey}
+      id={`mongodb-logo-${id}`}
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <svg
         preserveAspectRatio="xMidYMid"
         xmlns="http://www.w3.org/2000/svg"
@@ -19,6 +29,17 @@ export default function TailwindLogo() {
           fill="url(#a)"
         />
       </svg>
-    </div>
+      <Popover placement="bottom" open={isOpen} target={`#mongodb-logo-${id}`}>
+        <PopoverHeader className="popover-header">TailwindCSS</PopoverHeader>
+        <PopoverBody className="popover-body">
+          A utility-first CSS framework for rapidly building custom designs.
+          <br />
+          <br />
+          Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the
+          building blocks you need to build bespoke designs without any annoying opinionated styles
+          you have to fight to override.
+        </PopoverBody>
+      </Popover>
+    </a>
   );
 }

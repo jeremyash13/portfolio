@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
+import { Popover, PopoverHeader, PopoverBody } from 'shards-react';
 
-export default function CssLogo() {
+export default function CssLogo({ id }) {
   const someKey = nanoid();
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="icon" key={someKey}>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+      className="icon"
+      id={`css-logo-${id}`}
+      key={someKey}
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
         <path
           fill="#131313"
@@ -32,6 +42,15 @@ export default function CssLogo() {
           d="M64.039 43.677v11.136999999999999h-26.903000000000002l-.224-2.503-.507-5.646-.267-2.988h27.901zM64 66.221v11.138h-12.247l-.223-2.503-.508-5.647-.267-2.988h13.245z"
         />
       </svg>
-    </div>
+      <Popover placement="bottom" open={isOpen} target={`#css-logo-${id}`}>
+        <PopoverHeader className="popover-header">CSS3</PopoverHeader>
+        <PopoverBody className="popover-body">
+          Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of
+          a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML).
+          CSS describes how elements should be rendered on screen, on paper, in speech, or on other
+          media.
+        </PopoverBody>
+      </Popover>
+    </a>
   );
 }

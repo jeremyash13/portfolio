@@ -1,10 +1,20 @@
-import React from 'react';
-import { nanoid } from 'nanoid';
+import React, { useState } from 'react';
 
-export default function ReactLogo() {
+import { nanoid } from 'nanoid';
+import { Popover, PopoverHeader, PopoverBody } from 'shards-react';
+
+export default function ReactLogo({ id }) {
   const someKey = nanoid();
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="icon" key={someKey}>
+    <a
+      href="https://reactjs.org/"
+      className="icon"
+      key={someKey}
+      id={`react-logo-${id}`}
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348">
         <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
         <g stroke="#61dafb" strokeWidth="1" fill="none">
@@ -13,6 +23,15 @@ export default function ReactLogo() {
           <ellipse rx="11" ry="4.2" transform="rotate(120)" />
         </g>
       </svg>
-    </div>
+      <Popover placement="bottom" open={isOpen} target={`#react-logo-${id}`}>
+        <PopoverHeader className="popover-header">React.js</PopoverHeader>
+        <PopoverBody className="popover-body">
+          React makes it painless to create interactive UIs. Design simple views for each state in
+          your application, and React will efficiently update and render just the right components
+          when your data changes.<br/><br/> Declarative views make your code more predictable and easier to
+          debug.
+        </PopoverBody>
+      </Popover>
+    </a>
   );
 }

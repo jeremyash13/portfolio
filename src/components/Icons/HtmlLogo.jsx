@@ -1,10 +1,20 @@
-import React from 'react';
-import { nanoid } from 'nanoid';
+import React, { useState } from 'react';
 
-export default function HtmlLogo() {
+import { nanoid } from 'nanoid';
+import { Popover, PopoverHeader, PopoverBody } from 'shards-react';
+
+export default function HtmlLogo({ id }) {
   const someKey = nanoid();
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="icon" key={someKey}>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+      className="icon"
+      id={`html-logo-${id}`}
+      key={someKey}
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
         <path
           fill="#E44D26"
@@ -21,6 +31,16 @@ export default function HtmlLogo() {
           d="M63.962 66.978v11.063h13.624l-1.284 14.349-12.34 3.331v11.51l22.682-6.286.166-1.87 2.6-29.127.27-2.97h-2.982zM63.962 44.583v11.064h26.725l.221-2.487.505-5.608.265-2.969z"
         />
       </svg>
-    </div>
+      <Popover placement="bottom" open={isOpen} target={`#html-logo-${id}`}>
+        <PopoverHeader className="popover-header">HTML5</PopoverHeader>
+        <PopoverBody className="popover-body">
+          HTML5 is the latest evolution of the standard that defines HTML. The term represents two
+          different concepts. It is a new version of the language HTML, with new elements,
+          attributes, and behaviors, and a larger set of technologies that allows the building of
+          more diverse and powerful Web sites and applications. This set is sometimes called HTML5 &
+          friends and often shortened to just HTML5.
+        </PopoverBody>
+      </Popover>
+    </a>
   );
 }

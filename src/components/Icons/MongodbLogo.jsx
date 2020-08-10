@@ -1,10 +1,20 @@
-import React from 'react';
-import { nanoid } from 'nanoid';
+import React, { useState } from 'react';
 
-export default function MongodbLogo() {
+import { nanoid } from 'nanoid';
+import { Popover, PopoverHeader, PopoverBody } from 'shards-react';
+
+export default function MongodbLogo({ id }) {
   const someKey = nanoid();
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="icon" key={someKey}>
+    <a
+      href="https://www.mongodb.com/what-is-mongodb"
+      className="icon"
+      key={someKey}
+      id={`mongodb-logo-${id}`}
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <svg viewBox="0 0 512 146" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fillRule="evenodd">
           <path
@@ -41,6 +51,15 @@ export default function MongodbLogo() {
           />
         </g>
       </svg>
-    </div>
+      <Popover placement="bottom" open={isOpen} target={`#mongodb-logo-${id}`}>
+        <PopoverHeader className="popover-header">MongoDB</PopoverHeader>
+        <PopoverBody className="popover-body">
+          MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from
+          document to document and data structure can be changed over time. <br/><br/> The document model maps
+          to the objects in your application code, making data easy to work with. <br/><br/>Ad hoc queries,
+          indexing, and real time aggregation provide powerful ways to access and analyze your data
+        </PopoverBody>
+      </Popover>
+    </a>
   );
 }
