@@ -36,7 +36,7 @@ export const aboutData = {
   paragraphTwo:
     "Creating polished UI/UX's, making lives easier through the use of software, and constantly learning new things is what i find most fullfilling about Web Development",
   paragraphThree: '',
-  resume: 'http://www.jeremyashcraft.me/Jeremy_Ashcraft_Resume.pdf', // if no resume, the button will not show up
+  resume: 'https://www.jeremyashcraft.me/Jeremy_Ashcraft_Resume.pdf', // if no resume, the button will not show up
 };
 
 // SKILLS DATA
