@@ -9,6 +9,7 @@ export default function NodejsLogo({ id }) {
   return (
     <a
       href="https://nodejs.org/en/about/"
+      target="_blank"
       className="icon"
       key={someKey}
       id={`nodejs-logo-${id}`}

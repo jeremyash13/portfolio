@@ -9,6 +9,7 @@ export default function CssLogo({ id }) {
   return (
     <a
       href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+      target="_blank"
       className="icon"
       id={`css-logo-${id}`}
       key={someKey}

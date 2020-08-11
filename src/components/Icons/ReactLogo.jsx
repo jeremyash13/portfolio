@@ -9,6 +9,7 @@ export default function ReactLogo({ id }) {
   return (
     <a
       href="https://reactjs.org/"
+      target="_blank"
       className="icon"
       key={someKey}
       id={`react-logo-${id}`}

@@ -10,7 +10,6 @@
   }
 
   .skills-wrapper {
-    margin-bottom: 15rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
@@ -58,13 +57,17 @@
   }
   & .icons-wrapper {
     display: flex;
-    width: max-content;
+    flex-wrap: wrap;
+    max-width: 450px;
+    padding: 2rem;
+    justify-content: center;
     margin: 0 auto;
-    margin-bottom: 15px;
   }
   & .icon {
-    height: 30px;
-    margin-right: 10px;
+    height: 70px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
   & .icon-subtext {
     position: absolute;

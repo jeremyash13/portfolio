@@ -9,6 +9,7 @@ export default function HtmlLogo({ id }) {
   return (
     <a
       href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+      target="_blank"
       className="icon"
       id={`html-logo-${id}`}
       key={someKey}

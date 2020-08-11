@@ -7,7 +7,11 @@ import MongodbLogo from '../components/Icons/MongodbLogo';
 import TailwindLogo from '../components/Icons/TailwindLogo';
 import HtmlLogo from '../components/Icons/HtmlLogo';
 import CssLogo from '../components/Icons/CssLogo';
+import SassLogo from '../components/Icons/SassLogo';
 import JavascriptLogo from '../components/Icons/JavascriptLogo';
+import AwsLogo from '../components/Icons/AwsLogo';
+import GitLogo from '../components/Icons/GitLogo';
+import PhotoshopLogo from '../components/Icons/PhotoshopLogo';
 
 // HEAD DATA
 export const headData = {
@@ -26,16 +30,31 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'mountains.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
+  img: 'headshot.jpg',
+  paragraphOne:
+    "I was first introduced to Web Development during my softmore year of highschool when I enrolled in a Web Development class. During that time I learned HTML, CSS, and Adobe Dreamweaver. I was quite good compared to the rest of my class, and was offered the role of maintaining the school's website. In all honesty, I found it to be quite boring, and come next year, I instead enrolled in a Computer Programming class, which I found very exciting. It wasn't until 2018 when my love for Web Development took off, thanks to learning JavaScript and React. ",
+  paragraphTwo:
+    "Creating polished UI/UX's, making lives easier through the use of software, and constantly learning new things is what i find most fullfilling about Web Development",
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'http://www.jeremyashcraft.me/Jeremy_Ashcraft_Resume.pdf', // if no resume, the button will not show up
 };
 
 // SKILLS DATA
 export const skillsData = {
-  icons: [<GatsbyLogo id={nanoid()} />, <ReactLogo id={nanoid()} />, <NodejsLogo id={nanoid()} />, <TailwindLogo id={nanoid()} />, <MongodbLogo id={nanoid()} />],
+  icons: [
+    <GatsbyLogo id={nanoid()} />,
+    <ReactLogo id={nanoid()} />,
+    <NodejsLogo id={nanoid()} />,
+    <TailwindLogo id={nanoid()} />,
+    <MongodbLogo id={nanoid()} />,
+    <AwsLogo id={nanoid()} />,
+    <GitLogo id={nanoid()} />,
+    <JavascriptLogo id={nanoid()} />,
+    <HtmlLogo id={nanoid()} />,
+    <CssLogo id={nanoid()} />,
+    <SassLogo id={nanoid()} />,
+    <PhotoshopLogo id={nanoid()} />,
+  ],
 };
 
 // PROJECTS DATA
@@ -50,7 +69,14 @@ export const projectsData = [
       'This project came with some challenges, such as creating a web-scraper using Node.js to crawl the entire (old) website, formulating a database containing all the art RMP sells.',
     url: 'https://www.rockymountainpublishing.net/',
     repo: 'https://github.com/jeremyash13/rmp-ver2', // if no repo, the button will not show up
-    icons: [<GatsbyLogo id={nanoid()} />, <ReactLogo id={nanoid()} />, <NodejsLogo id={nanoid()} />, <TailwindLogo id={nanoid()} />, <MongodbLogo id={nanoid()} />],
+    icons: [
+      <GatsbyLogo id={nanoid()} />,
+      <ReactLogo id={nanoid()} />,
+      <NodejsLogo id={nanoid()} />,
+      <TailwindLogo id={nanoid()} />,
+      <AwsLogo id={nanoid()} />,
+      <MongodbLogo id={nanoid()} />,
+    ],
   },
   {
     id: nanoid(),
@@ -70,7 +96,11 @@ export const projectsData = [
     info2: '',
     url: 'https://jeremyash13.github.io/Game-Show-App/',
     repo: 'https://github.com/jeremyash13/Game-Show-App', // if no repo, the button will not show up
-    icons: [<HtmlLogo id={nanoid()} />, <CssLogo id={nanoid()}/>, <JavascriptLogo id={nanoid()} />],
+    icons: [
+      <HtmlLogo id={nanoid()} />,
+      <CssLogo id={nanoid()} />,
+      <JavascriptLogo id={nanoid()} />,
+    ],
   },
   {
     id: nanoid(),
@@ -80,7 +110,11 @@ export const projectsData = [
     info2: '',
     url: 'https://jeremyash13.github.io/Web-App-Dashboard/',
     repo: 'https://github.com/jeremyash13/Web-App-Dashboard', // if no repo, the button will not show up
-    icons: [<HtmlLogo id={nanoid()} />, <CssLogo id={nanoid()}/>, <JavascriptLogo id={nanoid()} />],
+    icons: [
+      <HtmlLogo id={nanoid()} />,
+      <CssLogo id={nanoid()} />,
+      <JavascriptLogo id={nanoid()} />,
+    ],
   },
   {
     id: nanoid(),
@@ -90,7 +124,11 @@ export const projectsData = [
     info2: '',
     url: 'https://jeremyash13.github.io/Interactive-Video-Player/',
     repo: 'https://github.com/jeremyash13/Interactive-Video-Player', // if no repo, the button will not show up
-    icons: [<HtmlLogo id={nanoid()} />, <CssLogo id={nanoid()} />, <JavascriptLogo id={nanoid()} />],
+    icons: [
+      <HtmlLogo id={nanoid()} />,
+      <CssLogo id={nanoid()} />,
+      <JavascriptLogo id={nanoid()} />,
+    ],
   },
   {
     id: nanoid(),
@@ -100,7 +138,11 @@ export const projectsData = [
     info2: '',
     url: 'https://jeremyash13.github.io/Photo-Gallery-Project/',
     repo: 'https://github.com/jeremyash13/Photo-Gallery-Project', // if no repo, the button will not show up
-    icons: [<HtmlLogo id={nanoid()} />, <CssLogo id={nanoid()} />, <JavascriptLogo id={nanoid()} />],
+    icons: [
+      <HtmlLogo id={nanoid()} />,
+      <CssLogo id={nanoid()} />,
+      <JavascriptLogo id={nanoid()} />,
+    ],
   },
 ];
 

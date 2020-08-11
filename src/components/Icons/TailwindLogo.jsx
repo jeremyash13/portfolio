@@ -6,9 +6,13 @@ import { Popover, PopoverHeader, PopoverBody } from 'shards-react';
 export default function TailwindLogo({ id }) {
   const someKey = nanoid();
   const [isOpen, setIsOpen] = useState(false);
+  const someStyles = {
+    maxWidth: '70px',
+  };
   return (
     <a
       href="https://tailwindcss.com/"
+      target="_blank"
       className="icon"
       key={someKey}
       id={`mongodb-logo-${id}`}
@@ -16,6 +20,7 @@ export default function TailwindLogo({ id }) {
       onMouseLeave={() => setIsOpen(false)}
     >
       <svg
+        style={someStyles}
         preserveAspectRatio="xMidYMid"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 256 153.6"

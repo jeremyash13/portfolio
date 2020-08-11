@@ -10,6 +10,7 @@ export default function JavascriptLogo({ id }) {
   return (
     <a
       href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      target="_blank"
       className="icon"
       key={someKey}
       id={`js-logo-${id}`}
