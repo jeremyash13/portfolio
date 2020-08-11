@@ -31,5 +31,19 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'jeremyashcraft.me-main-site',
+        protocol: 'https',
+        hostname: 'www.jeremyashcraft.me',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: 'https://www.jeremyashcraft.me',
+      },
+    },
   ],
 };
