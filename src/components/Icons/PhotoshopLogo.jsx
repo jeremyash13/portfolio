@@ -11,6 +11,7 @@ export default function PhotoshopLogo({ id }) {
         id={`photoshop-logo-${id}`}
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)}
+        key={id}
       >
         <radialGradient
           id="a"

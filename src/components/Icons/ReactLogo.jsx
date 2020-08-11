@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
-
-import { nanoid } from 'nanoid';
 import { Popover, PopoverHeader, PopoverBody } from 'shards-react';
 
 export default function ReactLogo({ id }) {
-  const someKey = nanoid();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <a
       href="https://reactjs.org/"
       target="_blank"
       className="icon"
-      key={someKey}
+      key={id}
       id={`react-logo-${id}`}
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}

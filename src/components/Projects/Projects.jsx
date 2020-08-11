@@ -69,7 +69,6 @@ const Projects = () => {
                           Source Code
                         </a>
                       )}
-                      <img style={{backgroundImage: 'url(../../images/icons//gatsby-ico.svg)', width: '50px'}}></img>
                     </div>
                   </Fade>
                 </Col>
@@ -102,7 +101,7 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                          <img alt={title} src={imgUrl}></img>
+                            <img alt={title} src={imgUrl}></img>
                           </div>
                         </Tilt>
                       </a>

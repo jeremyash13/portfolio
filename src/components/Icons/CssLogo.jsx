@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { nanoid } from 'nanoid';
 import { Popover, PopoverHeader, PopoverBody } from 'shards-react';
 
 export default function CssLogo({ id }) {
-  const someKey = nanoid();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -12,7 +10,7 @@ export default function CssLogo({ id }) {
       target="_blank"
       className="icon"
       id={`css-logo-${id}`}
-      key={someKey}
+      key={id}
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >

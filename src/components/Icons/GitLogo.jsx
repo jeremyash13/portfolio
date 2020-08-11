@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-
-import { nanoid } from 'nanoid';
 import { Popover, PopoverHeader, PopoverBody } from 'shards-react';
 
 export default function GitLogo({ id }) {
@@ -13,6 +11,7 @@ export default function GitLogo({ id }) {
       id={`git-logo-${id}`}
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
+      key={id}
     >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <path

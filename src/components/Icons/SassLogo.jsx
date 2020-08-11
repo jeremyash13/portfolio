@@ -12,6 +12,7 @@ export default function SassLogo({ id }) {
       id={`sass-logo-${id}`}
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
+      key={id}
     >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 384">
         <path
