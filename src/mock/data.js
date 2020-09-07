@@ -32,9 +32,9 @@ export const heroData = {
 export const aboutData = {
   img: 'headshot.jpg',
   paragraphOne:
-    "I was first introduced to Web Development during my softmore year of highschool when I enrolled in a Web Development class. During that time I learned HTML, CSS, and Adobe Dreamweaver. I was quite good compared to the rest of my class, and was offered the role of maintaining the school's website. In all honesty, I found it to be quite boring, and come next year, I instead enrolled in a Computer Programming class, which I found very exciting. It wasn't until 2018 when my love for Web Development took off, thanks to learning JavaScript and React. ",
+    "I was first introduced to Web Development during my sophomore year of highschool when I enrolled in a Web Development class. During that time I learned HTML, CSS, and Adobe Dreamweaver. I was quite good compared to the rest of my class, and was offered the role of maintaining the school's website. The following year I decided to instead enroll in a Computer Programming class, which turned out to be my absolute favorite class in all of highschool.",
   paragraphTwo:
-    "Creating polished UI/UX's, making lives easier through the use of software, and constantly learning new things is what i find most fullfilling about Web Development",
+    "Creating polished UI/UX's, making lives easier through software, and constantly learning new things is what I find most fullfilling about Web Development",
   paragraphThree: '',
   resume: 'https://my-random-items.s3-us-west-2.amazonaws.com/Jeremy_Ashcraft_Resume.PDF', // if no resume, the button will not show up
 };
