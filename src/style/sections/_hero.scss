@@ -66,6 +66,8 @@
 
     & a {
       font-size: 2.4rem;
+      padding: 0.8rem 1.6rem;
+      display: inline-block;
 
       @include respond(phone) {
         font-size: 2rem;

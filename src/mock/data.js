@@ -23,7 +23,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: '',
-  name: 'Jeremy',
+  name: 'Jeremy.',
   subtitle: '',
   cta: '',
 };
@@ -32,10 +32,13 @@ export const heroData = {
 export const aboutData = {
   img: 'headshot.jpg',
   paragraphOne:
-    "I was first introduced to Web Development during my sophomore year of highschool when I enrolled in a Web Development class. During that time I learned HTML, CSS, and Adobe Dreamweaver. I was quite good compared to the rest of my class, and was offered the role of maintaining the school's website. The following year I decided to instead enroll in a Computer Programming class, which turned out to be my absolute favorite class in all of highschool.",
+    "I began my web development journey in high school. During my sophomore year, I started learning about HTML and CSS—essential tools in a front end developer's toolbox.",
   paragraphTwo:
-    "Creating polished UI/UX's, making lives easier through software, and constantly learning new things is what I find most fullfilling about Web Development",
-  paragraphThree: '',
+    "The next year, I enrolled in a more advanced computer programming course. I quickly realized I had a knack for design and programming. Leadership at the school noticed, too. By the end of the year, I was managing the school's website.",
+  paragraphThree:
+    "In 2018, I decided it was time to add more skills to my toolbox. That's when I began mastering high-level languages and libraries, like JavaScript and React.",
+  paragraphFour:
+    'I know that polished UI/UX designs make life easier for everyone, from programmers to website visitors. Want to ensure your next website is up to code? Get in touch with me today.',
   resume: 'https://my-random-items.s3-us-west-2.amazonaws.com/Jeremy_Ashcraft_Resume.PDF', // if no resume, the button will not show up
 };
 
@@ -47,7 +50,7 @@ export const skillsData = {
     <NodejsLogo id={nanoid()} />,
     <TailwindLogo id={nanoid()} />,
     <MongodbLogo id={nanoid()} />,
-    <AwsLogo id={nanoid()} />,
+    // <AwsLogo id={nanoid()} />,
     <GitLogo id={nanoid()} />,
     <JavascriptLogo id={nanoid()} />,
     <HtmlLogo id={nanoid()} />,
@@ -63,10 +66,11 @@ export const projectsData = [
     id: nanoid(),
     imgUrl: 'https://media.giphy.com/media/U1rSU2WqtpLF4OV61A/giphy.gif',
     title: 'Rocky Mountain Publishing',
-    info:
-      'Over the spring of 2020 I built a brand new website for Rocky Mountain Publishing, a company I worked with for over 3 years as the Printer Operator and Graphic Designer.',
+    info: 'In spring 2020, I built a custom website for Rocky Mountain Publishing.',
     info2:
-      'This project came with some challenges, such as creating a web-scraper using Node.js to crawl the entire (old) website, formulating a database containing all the art RMP sells.',
+      'This project required me to create a web-scraping script using Node.js to collect all images and data from the existing website, due to the original site being built in 1995, and the original developer no longer having access to the existing database.',
+    info3:
+      "I've taken measures to ensure that never happens again, in the case I ever have to hand the project over to someone else.",
     url: 'https://www.rockymountainpublishing.net/',
     repo: 'https://github.com/jeremyash13/rmp-ver2', // if no repo, the button will not show up
     icons: [
@@ -148,7 +152,7 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
+  cta: "Want to work with me? You can count on me to develop your website or program. Reach out today to make me a part of your team.",
   btn: '',
   email: 'jeremyash13@gmail.com',
 };
