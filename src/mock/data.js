@@ -110,7 +110,7 @@ export const projectsData = [
     id: nanoid(),
     imgUrl: 'https://media.giphy.com/media/SUc6jKDeUETaQNL95a/giphy.gif',
     title: 'Web App Dashboard',
-    info: 'A mock web app dashboard',
+    info: 'A mock web app dashboard. Charts and graphs were built using the Chart.js library',
     info2: '',
     url: 'https://jeremyash13.github.io/Web-App-Dashboard/',
     repo: 'https://github.com/jeremyash13/Web-App-Dashboard', // if no repo, the button will not show up
@@ -152,7 +152,8 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: "Want to work with me? You can count on me to develop your website or program. Reach out today to make me a part of your team.",
+  cta:
+    'Want to work with me? You can count on me to develop your website or program. Reach out today to make me a part of your team.',
   btn: '',
   email: 'jeremyash13@gmail.com',
 };
