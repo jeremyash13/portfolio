@@ -64,6 +64,23 @@ export const skillsData = {
 export const projectsData = [
   {
     id: nanoid(),
+    imgUrl: 'https://media.giphy.com/media/S9FARNPcV4VQ4qnLkP/giphy.gif',
+    title: 'Simple Seek',
+    info:
+      'Simple Seek is a tool that will simplify your next job search. It features a Kanban-style board, drag & drop interface, and the ability to assign notes to job prospects—Helping you organize your job search.',
+    url: 'https://www.simpleseek.io/',
+    repo: 'https://github.com/jeremyash13/kanban-job-seeker', // if no repo, the button will not show up
+    icons: [
+      <GatsbyLogo id={nanoid()} />,
+      <ReactLogo id={nanoid()} />,
+      <NodejsLogo id={nanoid()} />,
+      <TailwindLogo id={nanoid()} />,
+      <AwsLogo id={nanoid()} />,
+      <MongodbLogo id={nanoid()} />,
+    ],
+  },
+  {
+    id: nanoid(),
     imgUrl: 'https://media.giphy.com/media/U1rSU2WqtpLF4OV61A/giphy.gif',
     title: 'Rocky Mountain Publishing',
     info: 'In spring 2020, I built a custom website for Rocky Mountain Publishing.',
