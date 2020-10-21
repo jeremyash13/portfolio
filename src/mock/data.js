@@ -12,6 +12,7 @@ import JavascriptLogo from '../components/Icons/JavascriptLogo';
 import AwsLogo from '../components/Icons/AwsLogo';
 import GitLogo from '../components/Icons/GitLogo';
 import PhotoshopLogo from '../components/Icons/PhotoshopLogo';
+import ReduxLogo from '../components/Icons/ReduxLogo';
 
 // HEAD DATA
 export const headData = {
@@ -47,6 +48,7 @@ export const skillsData = {
   icons: [
     <GatsbyLogo id={nanoid()} />,
     <ReactLogo id={nanoid()} />,
+    <ReduxLogo id={nanoid()} />,
     <NodejsLogo id={nanoid()} />,
     <TailwindLogo id={nanoid()} />,
     <MongodbLogo id={nanoid()} />,
