@@ -88,8 +88,6 @@ export const projectsData = [
     info: 'In spring 2020, I built a custom website for Rocky Mountain Publishing.',
     info2:
       'This project required me to create a web-scraping script using Node.js to collect all images and data from the existing website, due to the original site being built in 1995, and the original developer no longer having access to the existing database.',
-    info3:
-      "I've taken measures to ensure that never happens again, in the case I ever have to hand the project over to someone else.",
     url: 'https://www.rockymountainpublishing.net/',
     repo: 'https://github.com/jeremyash13/rmp-ver2', // if no repo, the button will not show up
     icons: [
